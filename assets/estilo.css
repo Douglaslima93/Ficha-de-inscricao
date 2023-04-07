@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 2480px;
+    height: 3508px;
+}
