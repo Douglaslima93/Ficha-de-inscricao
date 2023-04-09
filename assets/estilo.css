@@ -6,4 +6,23 @@
 .body{
     width: 2480px;
     height: 3508px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.cabecalho {        
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.main  h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.main input, .main p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+}
+
