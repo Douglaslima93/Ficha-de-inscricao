@@ -1,12 +1,23 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    
+    
 }
 
 .body{
     width: 2480px;
     height: 3508px;
     font-family: 'Open Sans', sans-serif;
+
+}
+
+.figure img{
+    opacity: .1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
 }
 
 .cabecalho {        
