@@ -15,22 +15,52 @@
     padding: 10px;
 }
 
-.main  h2{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.main input, .main p {
-    font-size: 15px;
-    text-align: justify;
+.main {
+    width: 80%;
+    margin: 20px auto;
     padding: 5px;
 }
 
-.nome {
+.main  h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+}
+
+.main input, .main p {
+    font-size: 22px;
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+}
+
+.main input {
+    border-style: none;
+    border-bottom: 2px solid black;
+    
+}
+
+.ladoalado {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+/*
+#data {
+    width: auto;
+}
 
+#end {
+    width: 86%;
+}
+
+#num {
+    width: 30%;
+}
+
+#bairro, #cidade {
+    width: auto;
 }
