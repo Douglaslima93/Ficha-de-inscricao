@@ -10,6 +10,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,500;1,
 600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </head>
 
 <body>
@@ -24,7 +29,7 @@
 
     <main class="main">
         <div class="ficha">
-            
+            <form>
             <h2><strong>Ficha de Incrição:</strong></h2>
             <div class="nome">
             <p>Nome Completo: <input type="text"></p>
@@ -91,8 +96,16 @@
             <p>Ass. Sensei: <input type="text"></p>
         </div>
 
+        <div class="botao">
+            <!--<button id="reset" type="reset">Reset</button>-->
+            
+        </div>
+    </form>
+    <button id="submit"  onclick="gerarPdf()">Gerar PDF</button>
     </main>
+
     <script src="./assets/script.js"></script>
+    
     
 </body>
 </html>
