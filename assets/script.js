@@ -1,7 +1,7 @@
 function gerarPdf() {
     let itens = document.querySelector('body').innerHTML
 
-    let conteudo = window.open('','','width=2480px,heigth=3508px')
+    let conteudo = window.open('')
     conteudo.document.write('<html><head>')
     conteudo.document.write('<title>Ficha de inscrição</title></head>')
     conteudo.document.write('<body')

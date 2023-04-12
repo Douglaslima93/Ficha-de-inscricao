@@ -6,8 +6,7 @@
 }
 
 .body{
-    width: 2480px;
-    height: 3508px;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -28,50 +27,42 @@
 
 .main {
     width: 80%;
-    margin: 20px auto;
-    padding: 5px;
+    margin: 30px auto;
+    padding: 20px;
+    
 }
 
 .main  h2{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin: 20px;
 }
 
-.main input, .main p {
-    font-size: 22px;
-    text-align: left;
-    padding: 5px;
-    width: 100%;
+.dados div{
+    margin-bottom: 10px;
+}
+
+.main label {
+    font-size: 20px;
 }
 
 .main input {
+    font-size: 20px;
     border-style: none;
     border-bottom: 2px solid black;
-    cursor: pointer;
+    text-align: left;
 }
 
-.ladoalado {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    
+.dados {
+   width: 90%;
     
 }
-/*
-#data {
-    width: auto;
+
+.dados input {
+    width: 50%;
+   
 }
 
-#end {
-    width: 86%;
-}
 
-#num {
-    width: 30%;
-}
 
-#bairro, #cidade {
-    width: auto;
-}
+
