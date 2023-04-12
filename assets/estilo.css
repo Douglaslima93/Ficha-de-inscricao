@@ -1,14 +1,11 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    
-    
 }
 
 .body{
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .figure img{
@@ -27,19 +24,18 @@
 
 .main {
     width: 80%;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
-    
 }
 
 .main  h2{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    margin: 20px;
+    margin: 5px;
 }
 
-.dados div{
-    margin-bottom: 10px;
+.dados div, .saude div, .informacoes div{
+    margin-bottom: 5px;
 }
 
 .main label {
@@ -48,20 +44,69 @@
 
 .main input {
     font-size: 20px;
-    border-style: none;
-    border-bottom: 2px solid black;
     text-align: left;
 }
 
-.dados {
-   width: 90%;
+.dados, .saude , .informacoes{
+   width: 100%;
+}
+
+.dados input, .saude input {
+    width: 100%;
+}
+
+.ladoalado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.informacoes input {
+    border-style: none;
+    border-bottom: 2px solid black;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.informacoes p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#reset, #submit {    
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+    
     
 }
 
-.dados input {
-    width: 50%;
-   
+.botao :hover{
+    background-color: red;
 }
+
+@media only screen and (max-device-width: 500px) {
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .figure img{
+        width: 100%;
+
+}
+}
+
+
+
+
 
 
 

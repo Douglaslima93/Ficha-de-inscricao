@@ -10,10 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,500;1,
 600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
-integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 
 </head>
 
@@ -30,20 +26,22 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <main class="main">
 
         <div class="ficha">
-            <form action="/index.html" method="post">
+            <form>
             <h2><strong>Ficha de Incrição:</strong></h2>
             
             <section class="dados">
-
+                
              <div> 
             <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" >
+            <input type="text" id="nome" required>
             </div>
 
              <div>
             <label for="date">Data de Nascimento:</label> 
             <input type="date" id="date">
             </div>
+
+            <div class="ladoalado">
 
             <div>
             <label for="endereco">Endereço:</label>
@@ -60,6 +58,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <input  type="text" id="bairro">
             </div>  
 
+            </div>
+
+            <div class="ladoalado">
             <div>
             <label for="cidade">Cidade: </label>
             <input  type="text" id="cidade">
@@ -67,24 +68,27 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
             <div>
             <label for="celular">Celular: </label>
-            <input type="tel" id="celular">
+            <input type="tel" id="celular" required>
             </div>
 
             <div>
             <label for="tel">Fone para Recado: </label>
-            <input type="tel" id="tel">
+            <input type="tel" id="tel" required>
             </div>
+        </div>
 
             <div>
             <label for="email">e-mail: </label>
-            <input type="email" id="email">
+            <input type="email" id="email" required>
             </div>
 
             <div>
             <label for="praticas">Praticas Anteriores: </label>
             <input type="text" id="praticas">
             </div>
+            
 
+            <div class="ladoalado">
             <div>
             <label for="idade">Idade: </label>
             <input type="number" id="idade">Anos
@@ -98,19 +102,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
             <div>
             <label for="altura">Altura: </label>
-            <input type="number" id="altura"> Cm
+            <input type="texto" id="altura"> Cm
             </div>
+        </div>
         </section>  
 
         </div>
-
-
 
         <section class="saude">
             <div>
             <h2><strong>Saúde:</strong></h2>
             </div>
 
+            <div class="ladoalado">
             <div>
             <label for="sangue">Tipo Sanguineo: </label>
             <input type="text" id="sangue"> 
@@ -118,28 +122,31 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
             <div>
             <label for="alergico">Alérgico(a): </label>
-            <input type="text" id="alergico">
+            <input type="text" id="alergico"required>
             </div>
 
             <div>
             <label for="remedio">Remédios Controlados: Qual(is)? </label>
-            <input type="text" id="remedio">
+            <input type="text" id="remedio"required>
             </div>
+        </div>
 
             <div>
             <label for="fratura">Fraturou Algum Osso: Qual(is)? </label>
             <input type="text">
             </div>
 
+            <div class="ladoalado">
             <div>
             <label id="acidente">Em caso de acidente, avisar:</label>
-            <input type="text" id="acidente">
+            <input type="text" id="acidente"required>
             </div>
 
             <div>
             <label for="fone">Fone: </label>
-            <input type="tel" id="fone">
+            <input type="tel" id="fone"required>
             </div>
+        </div>
         </section>
 
 
@@ -148,15 +155,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <h2>Informações Importantes:</h2>
         </div>
 
-            <div>
-            <label for="declaracao">Eu <input type="text"> Portador do RG: <input type="number"> Declaro estar de acordo com os termos desta 
-            inscrição e que o participante ( <input type="text"> ) esta apto, e em perfeitas condições de saúde,
+            <div class="texto">
+            <label for="declaracao">Eu <input type="text" required> Portador do RG: <input type="number"required> Declaro estar de acordo com os termos desta
+            inscrição e que o participante ( <input type="text"required> ) esta apto, e em perfeitas condições de saúde,
             isentando os organizadores desta academia de qualquer responsabilida por eventuais problemas ocorrido em decorrência
             da participação deste curso.</label>
             </div>
 
             <div>
-            <p>O valor da inscrição deverá ser pago assim que a mesma estiver preenchida.</p>
+            <p><strong>O valor da inscrição deverá ser pago assim que a mesma estiver preenchida.</strong></p>
             </div>
 
             <div>
@@ -181,24 +188,22 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <div>
             <label for="assaluno">Ass. Aluno ou responsável: </label>
-            <input type="text" id="assaluno">
+            <input type="text" id="assaluno"required>
         </div>
 
         <div>
             <label for="asssensei">Ass. Sensei: </label>
-            <input type="text" id="asssensei">
+            <input type="text" id="asssensei"required>
         </div>
     </section>
 
         <div class="botao">
-            <!--<button id="reset" type="reset">Reset</button>-->
-            
+            <button id="reset" type="reset">Reset</button>
+            <button id="submit" type="submit" onclick="click()">Concluido</button>
         </div>
     </form>
-    <button id="submit"  onclick="gerarPdf()">Gerar PDF</button>
     </main>
 
-    <script src="./assets/script.js"></script>
     
     
 </body>
